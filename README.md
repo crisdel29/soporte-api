@@ -18,7 +18,7 @@ en memoria (listas en Java), sin base de datos, por lo que se pierden al reinici
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/crisdel29/soporte-api
+   git clone https://github.com/crisdel29/soporte-api.git
    cd soporte
    ```
 2. Abrir la carpeta en IntelliJ IDEA (**File > Open**) y esperar a que Maven descargue las dependencias.
