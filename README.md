@@ -18,7 +18,7 @@ en memoria (listas en Java), sin base de datos, por lo que se pierden al reinici
 
 1. Clonar el repositorio:
    ```bash
-   git clone [URL-DEL-REPOSITORIO]
+   git clone https://github.com/crisdel29/soporte-api
    cd soporte
    ```
 2. Abrir la carpeta en IntelliJ IDEA (**File > Open**) y esperar a que Maven descargue las dependencias.
@@ -132,24 +132,24 @@ Para usarla: en Postman, **Import** y seleccionar el archivo.
 
 | # | Prueba | Resultado esperado | Captura |
 |---|---|---|-|
-| 01 | Crear solicitud | 201 | ![img.png](img.png) |
-| 02 | Listar | 200 | ![img_1.png](img_1.png) |
-| 03 | Buscar por id | 200 | ![img_2.png](img_2.png) |
-| 04 | Actualizar | 200 |![img_3.png](img_3.png) |
-| 05 | Validación fallida | 400 | ![img_4.png](img_4.png) |
-| 06 | Id inexistente | 404 |![img_5.png](img_5.png) |
-| 07 | Regla de negocio | 409 |![img_6.png](img_6.png)|
-| 08 | Eliminar | 204 | ![img_7.png](img_7.png) |
-| 09 | Verificar eliminación | 404 | ![img_8.png](img_8.png)|
+| 01 | Crear solicitud | 201 | ![img.png](docs/capturas/img.png) |
+| 02 | Listar | 200 | ![img_1.png](docs/capturas/img_1.png) |
+| 03 | Buscar por id | 200 | ![img_2.png](docs/capturas/img_2.png) |
+| 04 | Actualizar | 200 |![img_3.png](docs/capturas/img_3.png) |
+| 05 | Validación fallida | 400 | ![img_4.png](docs/capturas/img_4.png) |
+| 06 | Id inexistente | 404 |![img_5.png](docs/capturas/img_5.png) |
+| 07 | Regla de negocio | 409 |![img_6.png](docs/capturas/img_6.png)|
+| 08 | Eliminar | 204 | ![img_7.png](docs/capturas/img_7.png) |
+| 09 | Verificar eliminación | 404 | ![img_8.png](docs/capturas/img_8.png)|
 
 ## Swagger
 
-![img_9.png](img_9.png)
+![img_9.png](docs/capturas/img_9.png)
 
-![img_10.png](img_10.png)
-![img_11.png](img_11.png)
-![img_12.png](img_12.png)
-![img_13.png](img_13.png)
+![img_10.png](docs/capturas/img_10.png)
+![img_11.png](docs/capturas/img_11.png)
+![img_12.png](docs/capturas/img_12.png)
+![img_13.png](docs/capturas/img_13.png)
 
 ## Roles del equipo
 
