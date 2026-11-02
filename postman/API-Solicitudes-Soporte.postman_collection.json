@@ -1,0 +1,211 @@
+{
+  "info": {
+    "_postman_id": "ea301bd0-44aa-4c3a-b1ec-d00d626f24a1",
+    "name": "API Solicitudes Soporte",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56459096",
+    "_collection_link": "https://go.postman.co/collection/56459096-ea301bd0-44aa-4c3a-b1ec-d00d626f24a1?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "01 - Crear solicitud (POST)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"Computadora no enciende\",\r\n  \"descripcion\": \"El equipo de contabilidad no prende desde ayer\",\r\n  \"cliente\": {\r\n    \"nombre\": \"Juan Pérez\",\r\n    \"correo\": \"juan@empresa.com\"\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "02 - Listar",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "03 - Buscar por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "04 - Actualizar",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "05 - Validación fallida",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"abc\",\r\n  \"descripcion\": \"\",\r\n  \"cliente\": {\r\n    \"nombre\": \"\",\r\n    \"correo\": \"no-es-un-correo\"\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "06 - Id inexistente",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes/99",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes",
+            "99"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "07 - Regla de negocio",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"Computadora no enciende\",\r\n  \"descripcion\": \"El equipo de contabilidad no prende desde ayer\",\r\n  \"cliente\": {\r\n    \"nombre\": \"Juan Pérez\",\r\n    \"correo\": \"juan@empresa.com\"\r\n  },\r\n  \"tecnico\": {\r\n    \"nombre\": \"Carlos Ramos\",\r\n    \"especialidad\": \"Hardware\",\r\n    \"correo\": \"carlos@soporte.com\"\r\n  },\r\n  \"estado\": \"RESUELTA\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "08 - Eliminar",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "09 - Verificar eliminación",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
